@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+    <!-- <script type="text/javascript" src="js/common.js"></script> -->
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+</head>
+<body onload="a()">
+  <script>
+  function a(){
+     var username=window.sessionStorage.getItem("firstname");
+     document.getElementById("usern").innerHTML = username;
+      document.getElementById("usernn").innerHTML = username;
+}
+
+function getlogout_success(){
+
+      // window.localStorage.removeItem("loggedIn");
+      // window.localStorage.removeItem("firstname");
+      // window.localStorage.removeItem("username");
+      window.sessionStorage.removeItem("loggedIn");
+      window.sessionStorage.removeItem("firstname");
+      window.sessionStorage.removeItem("username");
+
+      location.replace("index.html");
+      
+    }
+</script>
+
+<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <div class="navbar-toggle collapsed " style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; border: none;">
+        <div>
+         <a class="navbar-brand" id="usernn" style="color: white;  display: inline; float: right;  " ></a>  
+       </div>
+      </div>
+      
+      <a class="navbar-brand" href="home.html">ADRDE</a>
+     </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar" >
+
+      <ul class="nav navbar-nav">
+        <li><a href="file_management.html">File Management</a></li>
+        <li><a href="leave_records.html">Leave Records</a></li>
+        <li><a href="training_rec.html">Training Record</a></li>
+        <li><a href="table.html">DRONA & Internet Status Log</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Group Management <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="group_running.html">Group Running Demands</a></li>
+            <li><a href="group_complaint.html">Group Complaint Portal</a></li>
+          </ul>
+        </li>
+      </ul> 
+    <!--   <ul class="nav navbar-nav">
+     <li> <a id="usern" style="color: white; float: right;">fds</a></li>
+    </ul> -->
+
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a  onclick="getlogout_success();" style="cursor: pointer;"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        
+      </ul>
+        <div class="collapse navbar-collapse">
+            <a class="navbar-brand" id="usern" style="color: white;  display: inline;float: right;" >fds</a>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<center>
+  <div class="form-body">
+    <div class="comp-form">
+    <div class="comp-form-head">
+      <p id="form-top"> Welcome to File Management Portal</p>
+    </div>
+    <div class="cname">
+        <p id="fm-no" class="txt_name">Serial No.</p> 
+            </div>
+        <div class="comp-form-name">
+        <input type="number" name="fname" placeholder="Enter Your Serial No. ..." id="fm_num" required="" class="name">
+      </div>
+
+    <div class="cname">
+        <p id="fm-name" class="txt_name">Document Name</p> 
+            </div>
+        <div class="comp-form-name">
+        <input type="text" name="fname" placeholder="Enter Document Name Here" id="fm_name" required="" class="name">
+      </div>
+
+    <div class="cname" >
+        <p class="doc-num">Document Number</p>
+            </div>
+            <div class="comp-form-name">
+        <input type="number" placeholder="Enter your Document Number" id="doc_num" class="name">
+      </div>
+
+    <div class="cname">
+        <p id="doc-rem" class="txt_name">Remark</p> 
+            </div>
+        <div class="comp-form-name">
+        <input type="text" name="fname" placeholder="Enter Remarks Here..." id="doc_rem" required="" class="name">
+      </div>
+
+
+    <div class="reg-form-submission">
+        <center>
+        <input type="submit" value="SUBMIT"  id="submit" class="btnsubmit" onclick ="#">
+                 <input type="submit" value="BACK"  id="submit" class="btnsubmit" onclick="window.location.href='home.html'">
+        </center>
+      </div>     
+  </div>  </div>  
+    </center>
+
+</body>
+</html>
