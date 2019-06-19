@@ -1,0 +1,465 @@
+
+/*login Form CSS*/
+.login-body{
+     background-repeat: no-repeat;
+     object-fit: contain;
+     background-position: center;
+     border: none;
+     background:url(../img/bg-01.jpg) no-repeat center;
+     height: 758px;
+     opacity: 0.2;
+     filter: blur(1px);
+}
+
+#bgimage{
+      
+       filter: blur(0px);
+       max-width: 100%;
+       max-height: 100%;    
+      
+}
+
+.login-form {
+     vertical-align: middle;
+     left: 50%;
+     top:40%;
+     position: absolute;
+     height: auto;
+     width: 350px;
+     margin:-180px 0px 0px -180px; 
+     border-radius: 5px 5px 5px 5px;
+     background-color:#ffffff;
+     padding-bottom: 30px;
+
+     /*box-shadow: 250px 0px 180px rgba(99,72,223,0.4), -250px 0px 180px rgba(99,72,223,0.4), 0px 150px 180px rgba(99,72,223,0.4),0px -150px 180px rgba(99,72,223,0.4) ;*/
+     /*background-image: linear-gradient(270deg, rgba(255,0,0,0), rgba(255,0,0,1));*/
+      /*box-shadow: 40px 10px 120px #4b79a1, -25px -7px 60px #4b79a1;*/
+      /*background: -webkit-linear-gradient(top, #7f7fd5, #86a8e7, #91d3E4);*/
+      background: -webkit-linear-gradient(top, #4b79a1, #283e51);
+}
+
+#login-login-head {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+
+}
+.login-login-username{
+    padding-left: 20px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.login-login-password{
+    padding-left: 20px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.login-login-input{
+ padding-left: 20px;
+
+}
+
+.err{
+    display: none;
+    color: tomato;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 15px;
+    padding-left: 20px;
+    /*font-weight: bold;*/
+}
+
+#err-msg{
+    padding-left: 5px;
+}
+
+ #username{
+     border-radius: 4px 4px 4px 4px;
+     width: 300px;
+     margin-top: 0px;
+     height: 35px;
+     border: 1px solid #ccc;
+     padding-left: 5px;
+ }
+ #psw{
+     border-radius: 4px 4px 4px 4px;
+     width: 300px;
+     margin-top: 0px;
+     height: 35px;
+     border: 1px solid #ccc;
+     padding-left: 5px;
+ }
+ #text{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+ }
+ .login-login-box{
+    padding-top: 20px;
+ }
+ #login-login-submit{
+
+    /*padding-top: 50px;*/
+    /*padding-left: 125px;*/
+
+ }
+.btnsubmit{
+     border-radius: 4px 4px 4px 4px;
+     width: 100px;
+     height: 35px;
+     background-color: #D5D1D1;
+     cursor: pointer;
+     border: none;
+     font-size: 15px;
+     margin-top: 35px;
+     margin-right: 20px;
+
+     /*position: relative;*/
+}
+.btnsubmitlogin{
+     border-radius: 4px 4px 4px 4px;
+     width: 100px;
+     height: 35px;
+     background-color: white;
+     cursor: pointer;
+     border: none;
+     font-size: 15px;
+     margin-top: 25px;
+     /*color: white;*/
+     /*margin-right: 20px;*/
+     /*position: relative;*/
+}
+.btnsubmitlogin:active{
+    background-color:RoyalBlue;
+}
+#reg{
+    /*padding-left: 120px;*/
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+  
+
+}
+#register{
+    margin-top: 25px;
+    font-size: 20px;
+
+
+}
+
+
+/* Registration Form CSS */
+
+
+.form-body{
+ background:url(../img/regbg.jpg) no-repeat center ;
+ background-repeat: no-repeat;
+ object-fit: contain;
+ background-position: center;
+ width: 100%;
+ height: auto;
+ position: absolute;
+ padding-bottom: 60px;
+ background-image: linear-gradient(135deg, #7f7fd5, #86a8e7);
+ padding-top: 60px;
+ height: 770px;
+
+ /*top: 0px;*/
+ /*padding-top: 200px;*/
+}
+.form{
+    border: 1px solid white;
+    width: 800px;
+    margin-left: 22%;
+    margin-right: 22%;
+    /*margin-top:12%;*/
+    position: relative;
+    opacity: 0.85;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px 4px 4px 4px;
+    animation:fadein 5s;
+    margin-bottom: 0px;
+
+
+    
+
+
+}
+
+/*.reg-form : hover{
+    animation: fadein 2s;}
+   
+}*/
+ @keyframes fadein{
+        from {opacity:0.3;}
+        to {opacity:0.85;}
+    }
+
+/*#txtreg{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+#txtname{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+#fname{
+    border-radius: 4px 4px 4px 4px;
+    width: 760px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+#lname{
+    border-radius: 4px 4px 4px 4px;
+    width: 760px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+
+}
+*/
+.form-fname{
+    padding-left: 15px;
+    margin-top: 0px;
+    /*padding-top: 10px;*/
+}
+.form-lname{
+    padding-left: 15px;
+    margin-top: 0px;
+    /*padding-top: 10px;*/
+}
+.form-dob{
+    margin-top: 20px;
+    padding-left: 15px;
+}
+/*#dob{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+     padding-left: 10px;
+     
+}
+#email
+{
+    height: 40px;
+     width: 760px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+     padding-left: 10px;
+}*/
+.form-email
+{
+     margin-top: 20px;
+     padding-left: 15px;  
+}
+.form-password
+{
+     margin-top: 20px;
+     padding-left: 15px;  
+     padding-bottom: 25px;
+
+}
+
+/*#passw
+{
+    height: 40px;
+    width: 760px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+     padding-left: 10px;
+
+}*/
+.form-submission
+{
+    margin-top: 20px;
+   
+}
+.form-confirmation
+{
+    margin-top: 20px;
+       
+     padding-bottom: 25px; 
+}
+/*#cpassw
+{
+    height: 40px;
+    width: 760px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+     padding-left: 10px;
+
+}*/
+
+
+
+
+/*Home PAge CSS*/
+.bghome{
+     /* background:url(../img/logo.jpg) no-repeat center;
+     background-repeat: no-repeat;
+     object-fit: contain;
+     opacity: 0.5;
+     background-position: center;
+     border: 1px solid black;
+     position: absolute;
+     height: 700px;*/
+
+
+      background-repeat: no-repeat;
+     object-fit: contain;
+     background-position: center;
+     border: none;
+     background:url(../img/logo.jpg) no-repeat center;
+     height: 758px;
+     opacity: 0.2;
+     filter: blur(1px);
+      
+}
+.ab{
+      /*vertical-align: middle;*/
+    /* left: 50%;
+     top:40%;*/
+     left: 10%;
+     width: auto;
+     position: absolute;
+     margin:-700px 0px 0px 00px; 
+     border-radius: 5px 5px 5px 5px;
+     font-family: sans-serif;
+     font-size: 16px;
+     text-align: justify;
+   
+}
+ /* Complaint CSS*/
+.name
+{
+    border-radius: 4px 4px 4px 4px;
+    width: 600px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.selectname{
+      border-radius: 4px 4px 4px 4px;
+    width: 612px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    /*margin-left: -5px;*/
+}
+
+.comp-form{
+    /*background: url(../img/compbg.jpg) no-repeat center;*/
+      background-repeat: no-repeat;
+     object-fit: contain;
+     /*border: 1px solid black;*/
+     /*height: 758px;*/
+     height: auto;
+     padding-bottom: 50px;
+     width: 700px;
+     /*box-shadow: 40px 10px 120px #9fEAE4, -25px -7px 60px #9fEAE4;*/
+     background-color: white;
+     border-radius: 4px 4px 4px 4px;
+
+
+}
+.txt_name{
+font-size: 14px;
+font-family: sans-serif;
+}
+.cname{
+    text-align: left;
+    padding-left:45px;
+    padding-top: 10px;
+
+
+
+}
+
+.comp-form-head{
+    border: 1px solid black;
+    height:  60px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+
+}
+#form-top{
+margin-top: 12px;
+}
+#cdesc{
+    width: 600px;
+    max-width: 600px;
+    max-height: 150px;
+   
+    border-radius: 4px 4px 4px 4px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+   .comp-form{
+     background-repeat: no-repeat;
+     object-fit: contain;
+     /*border: 1px solid black;*/
+     height: auto;
+     width: 350px;
+     box-shadow: 40px 10px 120px rgba(99,72,223,0.7), -25px -7px 60px rgba(99,72,223,0.5);
+     background-color: white;
+     border-radius: 4px 4px 4px 4px;
+     padding-left: 0px;
+     padding-bottom: 25px;
+
+}
+#form-top{
+    font-size: 25px;
+    margin-top: 18px;
+}    
+.name{
+    border-radius: 4px 4px 4px 4px;
+    width: 300px;
+    height: 40px;
+/*    border: 1px solid #ccc;*/
+    padding-left: 5px;
+    margin-left: -5px;
+}
+.selectname{
+      border-radius: 4px 4px 4px 4px;
+    width: 307px;
+    height: 40px;
+/*    border: 1px solid #ccc;*/
+    padding-left: 5px;
+    margin-left: -5px;
+}
+.comp-form-name{
+  border-radius: 4px 4px 4px 4px;
+    width: 300px;
+    height: 40px;
+    /*border: 1px solid #ccc;*/
+    padding-left: 0px;
+}
+.reg-form-submission{
+
+}
+.cname{
+     text-align: left;
+    padding-left:15px;
+    padding-top: 10px;
+}
+#cdesc{
+    width: 300px;
+    /*max-width: 300px;*/
+    max-height: 50px;
+    border-radius: 4px 4px 4px 4px;
+}
+}
